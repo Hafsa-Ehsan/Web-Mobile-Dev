@@ -19,37 +19,38 @@
         <div class="layout-wrapper">
             <main>
                 <h2>Video Demos</h2>
-
+ 
                 <article>
-                    <h3>Demo Video </h3>
-                    <p>It's a short clip of the scenic mountains, Hunza.</p>
-                    <div id="player-1" class="video-player"></div>
+                    <h3>Video 1</h3>
+                    <p>It's a short clip of the scenic mountains, Hunza. </p>
+                    <div id="player-1" class="video-player-vertical"></div>
                 </article>
-
+ 
+                <article>
+                    <h3>Video 2</h3>
+                    <p>This is a web dev guide video, I don't own the rights to it. </p>
+                    <div id="player-2" class="video-player"></div>
+                </article>
+ 
             </main>
         </div>
         <footer>
             <p>&copy; 2026</p>
         </footer>
 
-        <!-- This script tag loads the YouTube IFrame API -->
         <script src="https://www.youtube.com/iframe_api"></script>
         <script>
-            // This function name is special - YouTube's API calls it
-            // automatically once the API script above has finished loading.
             function onYouTubeIframeAPIReady() {
                 new YT.Player('player-1', {
-                    videoId: 'C6Ayf0Y-cnU'
+                    videoId: 'R7mMPbWehbI'
                 });
  
                 new YT.Player('player-2', {
-                    videoId: 'R7mMPbWehbI'
+                    videoId: 'jzfoFF_bZCI'
                 });
-
-                // If you add a second video, create a second player here, e.g:
-                // new YT.Player('player-2', { videoId: 'ANOTHER_VIDEO_ID' });
             }
         </script>
     </body>
-
+ 
 </html>
+ 
